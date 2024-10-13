@@ -11,7 +11,6 @@ body{
 }
 .container{
     padding: 10px;
-    
 }
 .book-container{
     padding: 15px;
@@ -59,6 +58,7 @@ body{
 .popup-box{
     background-color: #fd6569;
     width: 40%;
+    margin: auto;
     padding: 40px;
     border-radius: 10px;
     z-index: 2;
@@ -100,4 +100,21 @@ body{
 }
 .popup-box textarea:focus{
     outline: none;
+}
+
+@media(max-width:800px){
+    .popup-box{
+        margin: auto;
+    }
+    .book-container{
+        width: 40%;
+    }
+}
+@media(max-width:500px){
+    .popup-box{
+        margin-left: -40px;
+    }
+    .book-container{
+        width: 65%;
+    }
 }
